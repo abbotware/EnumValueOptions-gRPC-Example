@@ -10,3 +10,11 @@ enum ProfilesEnum {
 	B = 1 [(enum_name) = "BBB"]; 
 	C = 2 [(enum_name) = "CCC"];
 };
+
+message Nested {
+enum Type {
+	A = 0 [(enum_name) = "AAA"];
+	B = 1 [(enum_name) = "BBB"]; 
+	C = 2 [(enum_name) = "CCC"];
+};
+}
